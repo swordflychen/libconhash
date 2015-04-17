@@ -1,3 +1,6 @@
+#
+# date: 2015-04-17
+#
 
 # output path
 BIN = ./bin
@@ -47,5 +50,9 @@ prepare:
 	  
 clean:
 		-rm -rf $(BIN)
+
+# git commands alias
+push:
+		git push -u origin master
 
 .PHONY: all prepare clean
